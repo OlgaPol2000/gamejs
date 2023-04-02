@@ -40,10 +40,11 @@
     justify-content: center;
     height: 100vh;
     width: 100%;
+    transition: margin 0.5s ease-out;
 }
 
 .screen.up{
-    margin-top: 100vh;
+    margin-top: -100vh;
 }
 .time__list{
     display: flex;
@@ -61,4 +62,32 @@
     padding: 5px 10px;
     color: #fff;
     font-size: 18px;
+}
+
+.game__time{
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.board{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-image: linear-gradient(90deg, #8e63a5 0%, #ceb0df);
+}
+
+.game__new{
+    font-style: 18px;
+    background-color: #874caa;
+    border-radius: 20px;
+    color: #ceb0df;
+    border: 1px solid;
+    cursor: pointer;
 }
