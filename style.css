@@ -8,7 +8,7 @@
     max-width: 1240px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10;
+    padding: 0 10px;
 }
 .game {
   overflow: hidden;
@@ -20,19 +20,19 @@
 
 .game__title{
     font-size: 48px;
-    background-color: #205fa1;
+    background-color: #64a1e2;
     padding: 0 20px;
     background-repeat: 20px;
-    color: #4c84c1;
+    color: #ffffff;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .start{
     font-size: 34px;
-    color: #4c84c1;
-    background-color: #205fa1;
-    border: 1px dashed #205fa1;
+    color: #ffffff;
+    background-color: #64a1e2;
+    border: 1px dashed #64a1e2;
     padding: 5px  20px;
     cursor: pointer;
 }
@@ -93,10 +93,12 @@
 }
 
 .game__new{
-    font-size: 18px;
-    background-color: #205fa1;
+    font-size: 30px;
+    background-color: #64a1e2;
+    width: 300px;
+    height: 50px;
     border-radius: 20px;
-    color: #4c84c1;
+    color: #ffffff;
     border: 1px solid;
     cursor: pointer;
     padding: 5px 10px;
@@ -115,13 +117,25 @@
 
 @media screen and (max-width: 540px){
     .board{
-    max-width: 300px;
+    max-width: 540px;
     width: 100%;
+    }
+    .game__title{
+        font-size: 35px;
+    }
+    .game__new{
+        width: 200px;
     }
 }
 @media screen and (max-width: 320px){
+    .game__title{
+        font-size: 30px;
+    }
+    .game__new{
+        width: 170px;
+    }
     .board{
-    max-width: 250px;
+    max-width: 310px;
     width: 100%;
     }
 }
