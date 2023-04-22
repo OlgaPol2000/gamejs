@@ -20,25 +20,25 @@
 
 .game__title{
     font-size: 48px;
-    background-color: #874229;
+    background-color: #205fa1;
     padding: 0 20px;
     background-repeat: 20px;
-    color: #ca917d;
+    color: #4c84c1;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .start{
     font-size: 34px;
-    color: #ca917d;
-    background-color: #874229;
-    border: 1px dashed #874229;
+    color: #4c84c1;
+    background-color: #205fa1;
+    border: 1px dashed #205fa1;
     padding: 5px  20px;
     cursor: pointer;
 }
 
 .start:hover{
-    color: #ca917d;
+    color: #4c84c1;
 }
 
 .screen{
@@ -78,7 +78,7 @@
 }
 
 .board{
-    color: #fff;
+    color: #205fa1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,9 +94,9 @@
 
 .game__new{
     font-size: 18px;
-    background-color: #874229;
+    background-color: #205fa1;
     border-radius: 20px;
-    color: #ca917d;
+    color: #4c84c1;
     border: 1px solid;
     cursor: pointer;
     padding: 5px 10px;
@@ -111,4 +111,17 @@
     background-image: url(./img/ball.svg);
     background-size: cover;
     cursor: pointer;
+}
+
+@media screen and (max-width: 540px){
+    .board{
+    max-width: 300px;
+    width: 100%;
+    }
+}
+@media screen and (max-width: 320px){
+    .board{
+    max-width: 250px;
+    width: 100%;
+    }
 }
